@@ -133,7 +133,6 @@ const createCountryRow = ({flags, name, population, area, region}, index) => {
     (row.insertCell(2)).innerHTML = population.toLocaleString("en-us");
     (row.insertCell(3)).innerHTML = area.toLocaleString("en-us");
     (row.insertCell(4)).innerHTML = region;
-    (row.insertCell(4)).classList.add('sm-hidden');
 }
 
 const displayCountryPage = (data, allCountry) => {
