@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Ranks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="assets/hero-image-wr.jpg" alt="" class="background-image">
+    <img src="assets/Logo.svg" alt="" id="logo">
+    <main id="world-rank">
+        <header class="header">
+            <p class="found-text semi-16">Found <span id="results-found"></span> countries</p>
+            <input type="text" name="" id="search-bar" placeholder="Search by Name, Region, Subregion">
+        </header>
+        <div class="content">
+            <aside class="sidebar">
+                <label for="" class="bold-14">Sort by</label>
+                <select name="" id="sort-by">
+                    <option value="population">Population</option>
+                    <option value="name">Name</option>
+                    <option value="area">Area(km²)</option>
+                </select>
+                <label for="" class="bold-14">Region</label>
+                <div id="region-filter">
+                    <button type="button" class="region-selector" value="americas">Americas</button>    
+                    <button type="button" class="region-selector" value="antarctic">Antarctic</button>
+                    <button type="button" class="region-selector" value="africa">Africa</button>
+                    <button type="button" class="region-selector" value="asia">Asia</button>
+                    <button type="button" class="region-selector" value="europe">Europe</button>
+                    <button type="button" class="region-selector" value="oceania">Oceania</button>
+                </div>
+                <label for="" class="bold-14">Status</label>
+                <div class="status-selector">
+                    <span class="medium-14"><input type="checkbox" name="" id="member">Member of the United Nations</span>
+                    <span class="medium-14"><input type="checkbox" name="" id="independent">Independent</span>
+                </div>
+            </aside>
+            <table id="country-data">
+                <thead>    
+                    <tr class="labels">
+                        <th class="flag-header">Flag</th>
+                        <th class="name-header" id="nameHeader">Name</th>
+                        <th class="population-header" id="populationHeader">Population</th>
+                        <th class="area-header" id="areaHeader">Area(km²)</th>
+                        <th class="region-header sm-hidden">Region</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <div id="country-page">
+        <img src="https://flagcdn.com/cx.svg" alt="" id="country-flag">
+        <h2 id="common-name" class="semi-32">India</h2>
+        <h3 id="official-name" class="semi-16">Republic of India</h3>
+        <div class="main-info">
+            <div class="main-data">
+                <span class="main-data-label">Population</span><span id="population">143,104,201</span>
+            </div>
+            <div class="main-data">
+                <span class="main-data-label">Area(km²)</span><span id="area">143,104,201</span>
+            </div>
+        </div>
+        <div class="sub-info">
+            <div class="sub-data">
+                <span class="data-label">Capital</span><span id="capital"></span>
+            </div>
+            <div class="sub-data">
+                <span class="data-label">Subregion</span><span id="subregion"></span>
+            </div>
+            <div class="sub-data">
+                <span class="data-label">Language</span><span id="languages"></span>
+            </div>
+            <div class="sub-data">
+                <span class="data-label">Currencies</span><span id="currencies"></span>
+            </div>
+            <div class="sub-data border-bottom">
+                <span class="data-label">Continents</span><span id="continent"></span>
+            </div>
+        </div>
+        <p class="neighbour-label">Neighbouring Countries</p>
+        <div id="border-countries">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
