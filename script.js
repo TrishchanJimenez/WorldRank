@@ -19,7 +19,7 @@ let filteredArray = [];
 let countryData = [];
 
 const fetchData = async () => {
-    const res = await fetch('test.json');
+    const res = await fetch('https://restcountries.com/v3.1/all?fields=flags,name,cca3,independent,unMember,currencies,capital,region,subregion,languages,borders,area,population');
     data = await res.json();
     displayCountriesRank(data);
 }
